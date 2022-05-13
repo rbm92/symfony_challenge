@@ -1,6 +1,6 @@
 # SYMPHONY CHALLENGE
 
-## Author
+### Author
 
 Ricard Bargallo
 
@@ -10,7 +10,7 @@ Creation of a simple Product CRUD API using PHP Symfony framework and its ecosys
 
 ## Previous Requirements
 
-Install PHP, Composer & Symfony
+Install PHP, MySQL, Composer & Symfony
 
 ## Project Methodology
 
