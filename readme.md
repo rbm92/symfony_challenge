@@ -5,6 +5,7 @@
 Ricard Bargallo
 
 ## Project Description
+
 Creation of a simple Product CRUD API using PHP Symfony framework and its ecosystem
 
 ## Previous Requirements
