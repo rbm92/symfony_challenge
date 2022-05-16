@@ -2,7 +2,11 @@ body {
     font-family: Helvetica, Sans-Serif;
 }
 
-h1, table, p, .crud, form {
+h1,
+table,
+p,
+.crud,
+form {
     margin: 20px;
 }
 
@@ -15,25 +19,27 @@ table {
 
 th {
     background-color: #e0e0e0;
-    
+
 }
 
-td, tr {
+td,
+tr {
     background-color: #f9f9f9;
-    
+
 }
 
-th, td {
+th,
+td {
     margin: 10px;
     padding: 10px 20px;
 }
 
 .actions {
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 
 a {
@@ -45,7 +51,8 @@ label {
     width: 100px;
 }
 
-input, select {
+input,
+select {
     margin: 10px auto;
     padding: 10px;
     font-size: medium;
@@ -77,27 +84,10 @@ button {
     background-color: orangered;
 }
 
-button:hover {
-
+.save:hover {
+    background-color: limegreen;
 }
 
-/* thead th:nth-child(1) {
-    width: 30%;
+.delete:hover {
+    background-color: crimson;
 }
-
-thead th:nth-child(2) {
-    width: 20%;
-}
-
-thead th:nth-child(3) {
-    width: 15%;
-}
-
-thead th:nth-child(4) {
-    width: 35%;
-}
-
-th,
-td {
-    padding: 20px;
-} */
