@@ -5,37 +5,56 @@
 Ricard Bargallo
 
 ## Project Description
-
 Creation of a simple Product CRUD API using PHP Symfony framework and its ecosystem
 
 ## Previous Requirements
 
-Install PHP, MySQL, Composer & Symfony
+Install Homebrew, PHP, MySQL & Composer
+
+### 1. Homebrew
+
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+### 2. PHP
+
+$ brew install php
+
+### 3. MySQL
+
+$ brew install mysql (by default there's no password)
+
+Either Workbench or TablePlus can be used as the interface app
+
+### 4. Composer
+
+$ brew install composer
+
+$ composer install (to download all dependencies, similar to npm install)
 
 ## Project Methodology
 
-### 1. Creating the project skeleton
+### 1. Creating the project skeleton (this is already done)
 
-symfony new --full sym_prod
+$ symfony new --full sym_prod
 
-### 2. Setting the environment variables on .env (example on MySQL)
+### 2. Setting the environment variables on .env (example, my credentials on MySQL)
 
-- DB_USER=your_user
-- DB_PASSWORD=your_password
-- DB_HOST=your_host
-- DB_PORT=your_port
-- DB_NAME=your_url
+- DB_USER=root
+- DB_PASSWORD=
+- DB_HOST=localhost
+- DB_PORT=3306
+- DB_NAME=sym_prod
 - DATABASE_URL=mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 
-### 3. Creating DB
+### 3. Creating DB (this must be done locally)
 
-php bin/console doctrine:database:create
+$ php bin/console doctrine:database:create
 
 (after confirming, DB will be added locally)
 
 ### 4. Creating the 'product' entity
 
-php bin/console make:entity
+$ php bin/console make:entity
 
 Class name: Product
 
@@ -62,7 +81,7 @@ enabled boolean no
 
 ### 6. Creating CRUD
 
-php bin/console make:crud Product
+$ php bin/console make:crud Product
 
 Controller class: ProductController
 
